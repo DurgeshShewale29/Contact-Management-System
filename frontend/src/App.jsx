@@ -8,7 +8,7 @@ function App() {
 
     useEffect(() => {
         const loadContacts = async () => {
-            const res = await axios.get("http://localhost:5000/api/contacts");
+            const res = await axios.get("https://contact-management-system-mmgc.onrender.com/api/contacts");
             setContacts(res.data);
         };
 
@@ -16,7 +16,7 @@ function App() {
     }, []);
 
     const refreshContacts = async () => {
-        const res = await axios.get("http://localhost:5000/api/contacts");
+        const res = await axios.get("https://contact-management-system-mmgc.onrender.com/api/contacts");
         setContacts(res.data);
     };
 

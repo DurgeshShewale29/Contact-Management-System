@@ -18,7 +18,7 @@ export default function ContactForm({ onAdd }) {
     e.preventDefault();
     if (!isValid) return;
 
-    await axios.post("http://localhost:5000/api/contacts", form);
+    await axios.post("https://contact-management-system-mmgc.onrender.com/api/contacts", form);
     setForm({ name: "", email: "", phone: "", message: "" });
     onAdd();
   };

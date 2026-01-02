@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default function ContactList({ contacts, onDelete }) {
   const remove = async (id) => {
-    await axios.delete(`http://localhost:5000/api/contacts/${id}`);
+    await axios.delete(`https://contact-management-system-mmgc.onrender.com/api/contacts/${id}`);
     onDelete();
   };
 
